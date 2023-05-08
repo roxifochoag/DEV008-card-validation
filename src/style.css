@@ -1,0 +1,169 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Arial";
+  text-align: center;
+  scroll-behavior: smooth;
+  text-align: center;
+  background-color: #021B67;
+  margin: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 50% ;
+  grid-template-rows: 1fr 2fr 1fr;;
+  box-sizing: border-box;
+  background-color: #EAF2E3;
+}
+
+.grid-container>div {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.item1 {
+  background-color: #021B67;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+
+
+.item3 {
+  background-color:#ff7800;
+  grid-column: 1/3;
+  grid-row: 2/6;
+}
+
+.item4 {
+  background-color:#ff7800;
+  grid-column: 3/4;
+  grid-row: 2/6;
+}
+
+.item5 {
+  background-color:#ff7800;
+  grid-column: 1/2;
+  grid-row: 4/6;
+}
+
+.item6 {
+  background-color:#021B67;
+  grid-column: 1/4;
+  grid-row: 6/7;
+}
+
+@media screen and (max-width: 1600px) {
+    .item3{
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+
+  .item4{
+    grid-column: 3/4;
+    grid-row: 3/6;
+  }
+
+  .item5{
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .item3{
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  .item4{
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+
+  .item5{
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+}
+
+
+p{
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+
+}
+
+section {
+  width:100%; /* Establecemos que el header abarque el 100% del documento */
+  overflow:hidden; /* Eliminamos errores de float */
+  background:#021B67;
+  margin-bottom:0px;
+}
+
+.wrapper {
+  width: 90%; /* Establecemos que el ancho sera del 90% */
+ /* max-width:1000px;/* Aqui le decimos que el ancho máximo sera de 1000px */
+  margin:auto; /* Centramos los elementos */
+  overflow:hidden; /* Eliminamos errores de float */
+}
+
+section .logo {
+  color:#f2f2f2;
+  font-size:50px;
+  line-height:90px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+
+}
+
+section nav {
+  float:right;
+  line-height:130px;
+}
+
+section nav a {
+  display:inline-block;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 20px;
+  line-height:normal;
+  font-size:20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+
+section nav a:hover {
+  background:#f56f3a;
+  border-radius:50px;
+}
+
+button{
+  color:white;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius:50px;
+  background-color:#ff7800;
+  text-decoration:none;
+  padding:18px 30px;
+  line-height:normal;
+  font: size 15px;
+} 

@@ -1,14 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+
+<html lang="en"> 
+<link rel="stylesheet" href="style.css">
+<head>
+  
+  <meta charset="UTF-8">
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+ 
+
+    <title> Bienvenido al BCP</title>
+    <link rel="icon" href="image/visa.ico" type="image/png"> 
+</head>
+
+<body> 
+ 
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+    <div class="grid-container">
+       <div class="item1">
+        <section>
+          <section class="wrapper">
+          <section class="logo"></section>
+             <nav>
+               <a href="#">Inicio</a>
+               <a href="#">Personas</a>
+               <a href="#">Empresas</a>
+               <a href="#">Contacto</a>
+             </nav>
+             <img class="logo" src="image/logo.png" alt=" logo"/>
+
+           </section>
+        </section>
+       
+            </div>
+       <div class="item3" >
+
+         <img class="promocion" src="image/5.png" alt=" Imagen"/>
+
+        </div>
+
+       <div class="item4">
+     
+        
+        <main class="container">
+           <p>Sistema de Validación y activación de tarjetas</p>
+           <p>Visa & Visa Electron del BCP</p>
+            
+        
+       
+           <section class="card-container">
+            <div class="credit-card">
+              <div class="card-title"> 
+                  
+              </div>
+              
+              <div class="card-info">
+                   <p><p class="card-number">N° Tarjeta</p></p> 
+                   <p id="creditCardNumber" pattern="[0-9.]+">#### #### #### 1234</p>
+              </div>
+              <div class="card-name">
+                  <p id="creditCardName">Nombre y apellido</p>
+              
+              </div>
+              </div>
+            </section>
+
+
+            <section class="info-container">
+            <form id="validateForm">
+              
+              <input id="cardNumberInput" type="number"  minlength="1" maxlength="16" placeholder="  xxxx-xxxx-xxxx-xxxx " />
+              <p><label for="tarjeta">N° Tarjeta</label></p>
+            
+              <input type="text" id="clientName" placeholder="Nombre y Apellido">
+              <br><br>
+              <p><label for="client-name">Nombre y Apellido</label></p> 
+             <p><button type="submit" class="validate-btn">Validar</button></p> 
+             <p id="result"></p>  <p id="identificar"> </p></div>
+            </form>
+          
+            </section>
+          
+      </main>
+
+
+
+
+
+      </main>
+       </div>
+  
+       <div class="item6">
+
+        <p id="footer">Esta es una página creada con fines educativos basada en la tipográfia del BCP aplicando el algoritmo de Luhn. 
+          <br/>
+          <br/>
+       Si tienes dudas la comunicate conmigo enviandome un mensaje.
+          <br/>
+          <br/>
+       Todos los derechos reservados   |   © 2023 Roxi Ochoa
+          </p>
+
+       </div>
+    </div> 
+    <script src="index.js"></script>
+ </body>
+
+
 </html>
+
