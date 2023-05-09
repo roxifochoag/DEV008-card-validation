@@ -17,19 +17,21 @@ nameInput.addEventListener('keyup', () => {
 
 cardInput.addEventListener('keyup', () => {
   let formattedText = cardInput.value.split(' ').join('');
-    if (formattedText.length <= 16) {
-      formattedText.length > 0 ? formattedText = formattedText.match(new RegExp('.{1,4}', 'g')).join(' ') : alert('Detente aquí')
-    }
+  if(formattedText.length <= 16){
+    formattedText.length > 0 ? formattedText = formattedText.match(new RegExp('.{1,4}', 'g')).join(' ') : alert('Detente aquí')
+  }
   cardImgNumber.innerHTML = validator.maskify(formattedText);
 })
 
 validateForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  let cardNumber = cardInput.value;
-  let validateResult = validator.isValid(cardNumber);
+  const cardNumber = cardInput.value;
+  const validateResult = validator.isValid(cardNumber);
   if(validateResult) {
     resultBox.textContent = 'La tarjeta es válida';
+    alert("La tarjeta es válida");
   } else {
     resultBox.textContent = 'La tarjeta no es válida';
+    alert("La tarjeta es no válida");
   }
 });

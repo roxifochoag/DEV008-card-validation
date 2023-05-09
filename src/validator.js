@@ -1,14 +1,14 @@
 const validator = {
   isValid: (creditCardNumber) => {
-    let cardArr = creditCardNumber.split("").reverse();
-    let totalAdd = [];
+    const cardArr = creditCardNumber.split("").reverse();
+    const totalAdd = [];
     for (let i = 0; i < cardArr.length; i++) {
-      if (i % 2 == 0) {
+      if (i % 2 === 0) {
         totalAdd.push(parseInt(cardArr[i]))
       } else {
         cardArr[i] = parseInt(cardArr[i]) * 2;
         if (cardArr[i] > 9) {
-          let num = cardArr[i].toString().split("");
+          const num = cardArr[i].toString().split("");
           totalAdd.push(parseInt(num[0]) + parseInt(num[1]));
         } else {
           totalAdd.push(parseInt(cardArr[i]));
