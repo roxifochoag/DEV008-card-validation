@@ -18,7 +18,11 @@ html {
   grid-template-columns: 25% 50% ;
   grid-template-rows: 1fr 2fr 1fr;;
   box-sizing: border-box;
-  background-color: #EAF2E3;
+  background-color: #021B67;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 10px;
+
 }
 
 .grid-container>div {
@@ -26,7 +30,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 10px;
 }
 
 .item1 {
@@ -167,3 +173,24 @@ button{
   line-height:normal;
   font: size 15px;
 } 
+.promocion{
+  background-color: #EAF2E3;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 10px;
+
+}
+
+
+.container{
+  background-color: #021B67;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 10px;
+
+}
+
+input{
+  border-radius: 5px;
+  border: 1px solid #39c;
+}
